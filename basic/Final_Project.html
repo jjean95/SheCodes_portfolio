@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All about the cheese 🧀</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(255, 200, 124) 0%,
+          rgb(252, 251, 121) 90%
+        );
+      }
+      .container {
+        margin: 30px 100px;
+        background-color: #eff0db;
+        border: 1px solid #db6e37;
+      }
+
+      strong,
+      em {
+        color: #db6e37;
+      }
+
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        padding: 10px;
+        color: #db6e37;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        font-weight: lighter;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 10px;
+        width: 500px;
+        border: 4px dotted #db6e37;
+      }
+      .cheese {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.5;
+        margin: 10px 100px;
+        padding: 10px;
+      }
+      a {
+        font-family: "Courier New", Courier, monospace;
+        text-align: justify;
+        line-height: 1.5;
+        margin: 10px 100px;
+        padding: 10px;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+        color: #eff0db;
+        background-color: rgb(248, 173, 68);
+        font-size: 30px;
+        border: 1px solid #db6e37;
+        box-shadow: 5px 5px rgb(189, 189, 189);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: rgb(248, 173, 68);
+        background-color: #eff0db;
+        cursor: pointer;
+      }
+
+      .footer {
+        font-family: monospace;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+        margin: 10px 100px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I 💖 cheese</h1>
+      <h2>And I <strong>wanted</strong> to talk about them :)</h2>
+      <img
+        src="https://static.toiimg.com/thumb/82065684.cms?resizemode=4&width=1200"
+      />
+      <p class="cheese">
+        <strong>Cheese</strong> is a dairy product produced in wide ranges of
+        flavors, textures, and forms by <em>coagulation</em> of the milk protein
+        casein. It comprises <em>proteins</em> and <em>fat</em> from milk
+        (usually the milk of cows, buffalo, goats, or sheep). During production,
+        milk is usually <em>acidified</em> and either the enzymes of rennet or
+        bacterial enzymes with similar activity are added to cause the casein to
+        coagulate. <br /><br />
+        The solid curds are then separated from the liquid whey and pressed into
+        finished cheese. Some cheeses have aromatic molds on the rind, the outer
+        layer, or throughout.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Cheese" target="_blank">
+        Click this link to learn more</a
+      >
+      <button>Take the quiz! 🧀</button>
+
+      <p class="footer">Coded by Jia Ean using HTML, CSS and JS</p>
+    </div>
+    <script>
+      function cheeseButton() {
+        let name = prompt("What is your name?");
+        let question = prompt("Do you like cheese?");
+        question = question.toLowerCase();
+        if (question === "yes") {
+          alert("Welcome to the cheese club " + name + " !🤗");
+        } else {
+          alert("Well, too bad " + name + "!🤪 This is cheese lover club!");
+        }
+      }
+
+      let clickButton = document.querySelector("button");
+      clickButton.addEventListener("click", cheeseButton);
+    </script>
+  </body>
+</html>
